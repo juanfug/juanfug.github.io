@@ -1,0 +1,424 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Raleway';
+    text-decoration: none;
+}
+/*header estilos*/
+
+header{
+    width: 100%;
+    height:50px;
+    background: #3fb899;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 25px -22px chocolate;
+    z-index: 2;
+}
+.Con-header{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.fondo-header{
+    display: flex;
+
+}
+.fondo-header img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.fondo-header h1{
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgba(0, 77, 128, 0.815);
+}
+.menu-header{
+    height: 50px;
+}
+.menu-header nav{
+    height: 100%;
+
+}
+.menu-header nav ul{
+    display: flex;
+    height: 100%;
+    list-style: none;
+}
+.menu-header nav li{
+    height: 100%;
+    margin: 0% 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.menu-select:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: rgb(129, 129, 129);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu-header nav ul li a{
+    color: rgba(0, 77, 128, 0.815);
+    transition: color 300ms;
+}
+.menu-header nav ul li a:hover{
+    color: maroon;
+}
+.menu-header .text-select{
+    color: maroon;
+}
+
+.menu-header nav ul li a i{
+    display: none;
+} 
+
+#menu-icono{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 20px;
+    background: #fafafa;
+    border-radius: 100%;
+    color: #787878;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+}
+#menu-icono:hover{
+    opacity: 0.8;
+}
+
+/* estilo para icono de menu desplegable 
+.icon-menu{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: white;
+    font-size: 28px;
+}
+*/
+/*Portada*/
+
+.Con-portada{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    animation: movimiento 10s linear infinite alternate;
+    position: relative;
+    margin-top: 40px;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.gradiente{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:-webkit-linear-gradient(left, black,#3fb899);
+    opacity: 0.5;
+}
+.con-detalles{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+.detalles{
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    top: 20px;
+    color:whitesmoke;
+    
+}
+.detalles h1{
+    font-size:35px;
+    font-weight:20;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.detalles p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.detalles button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer; 
+}
+.detalles button:hover{
+    background: #3fb899;
+}
+
+/*Informacion*/
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 10px auto;
+    border-radius: 5rem;
+    box-shadow: 0.5px 0 1px 0px black;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+article{
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-bottom:40px;    
+}
+article img{
+    width:100%;
+    max-width: 300px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;    
+}
+article h2{
+    font-size: 28px;
+    font-weight: 40;
+}
+article hr{
+    max-width: 500px;
+    height: 5px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black,#91ADBD);
+    margin-top: 10px;
+}
+article p{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 100;
+    text-align: justify;
+    color: #3c3c3c;
+}
+
+@media screen and (max-widht:500px){
+    .detalles p{
+        font-size: 18px;
+    }
+}
+/*aside perfil- es un simple aside para demostrar su implementacion*/
+
+.con-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+}
+.con-aside aside img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.con-aside aside h2,
+.con-aside aside p{
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.con-aside aside button{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #3fb899;
+    border: none;
+    color: blanchedalmond;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.con-aside aside button:hover{
+    opacity: 0.9;
+
+}
+
+/*footer y pie de pagina*/
+
+.con-footer{
+    width:100%;
+    margin-top:40px;
+    padding: 40px 0;
+    background: whitesmoke;
+}
+
+.con-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.con-footer footer .logo-foot{
+    text-align: center;
+}
+.con-footer footer .logo-foot img{
+    width: 80px;
+}
+
+.con-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.con-footer footer .redes-footer .icon-redes-footer {
+    font-size: 40px;
+    margin: 10px;
+    background: whitesmoke;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: rgb(207, 197, 197);
+}
+
+footer .redes-footer .fa-linkedin:hover{
+    background: rgb(60, 60, 218);
+    color: cornsilk;
+}
+
+footer .redes-footer .fa-github:hover{
+    background: rgb(75, 75, 90);
+    color: cornsilk;
+}
+
+footer .redes-footer .fa-whatsapp-square:hover{
+    background: rgb(85, 207, 122);
+    color: cornsilk;
+}
+.con-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #cedad7;
+}
+
+.con-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+/* -- Caracteristicas de Responsive, adaptacion a movil --*/
+
+@media screen and (max-width: 1220px){
+
+
+    main{
+        flex-direction: column;
+        width: 100%;
+    }
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .con-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .con-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+        .menu-header{
+            width: 0px;
+            height: 100vh;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            background: #fff;
+            overflow: hidden;
+            transition: all 300ms cubic-bezier(1,0,0,1);
+            transform: translateX(-350px);
+            box-shadow: 10px 0 20px -25px black;
+        }
+        .menu-header nav ul{
+            flex-direction: column;
+        }
+        .menu-header nav ul li{
+            max-width: 200px;
+            height: 50px;
+            justify-content: flex-start;
+        }
+        .menu-select:before{
+            width: 0;
+        }
+
+        .menu-header nav ul li a{
+            margin-top: 40px;
+            color: #858585;
+        }
+
+        .menu-header nav ul li a i{
+            width: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            color: #3fb899;
+        }
+        #menu-icono{
+            display:flex;
+        }
+        .con-aside{
+            flex-wrap: wrap;
+        }
+
+        .move-all{
+            transform: translateX(300px);
+        }
+        .all{
+            transition: all 300ms cubic-bezier(1,0,0,1);
+        }
+        .show-lateral-menu-header{
+            width: 300px;
+            transform: translateX(0px);
+        }
+        body{
+            overflow-x: hidden;
+        }
+}
